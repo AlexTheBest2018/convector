@@ -1,0 +1,63 @@
+body ul, body ul li{
+    margin-left: 0;
+}
+#currency_form {
+    max-width: 1000px;
+    width: 100%;
+}
+.currency_form{
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-between;
+}
+.currency_form .mr-2{
+    margin-right: 15px;
+}
+select{
+    height: 46px;
+    flex: 1 1 3em;
+}
+.currency_form .amount{
+    display: block;
+    flex: 1 1 2em;
+}
+.to{
+    margin: 0 15px;
+}
+.exchanges_list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.exchanges_list-item--date{
+    justify-self: flex-end;
+    margin-left: auto;
+}
+li.exchanges_list-item {
+    border-bottom: dashed;
+    margin-bottom: 20px;
+}
+.exchanges_list-item--block{
+    margin-right: 15px;
+}
+@media (max-width: 767px) {
+    #currency_form{
+        padding: 20px;
+    }
+    .currency_form{
+        flex-direction: column;
+    }
+    select{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .currency_form .amount, #currency_form .result{
+        width: 100%;
+        margin: 10px 0;
+    }
+    li.exchanges_list-item{
+        font-size: 14px;
+    }
+}
